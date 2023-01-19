@@ -20,15 +20,20 @@
 <body>
  
     <header class="header">
-        <div class="conteiner menu">
-            <nav class="conteiner-nav">
-                <a href="./index.html" class="logo"><span class="accent">Web</span>Studio</a>
-                <ul class="site-nav list">
-                    <li class="item"><a href="./index.html" class="link active"><span class="accent">Studio</span> </a></li>
-                    <li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
-                    <li class="item"><a href="/" class="link">Contacts</a></li>
+     <div class="conteiner menu">
+        <nav class="conteiner-nav">
+         <a href="./index.html" class="logo"><span class="accent">Web</span>Studio</a>
+            <ul class="site-nav list">
+                <li class="item"><a href="./index.html" class="link active"><span class="accent">Studio</span> </a></li>
+                <li class="item"><a href="./portfolio.html" class="link">Portfolio</a></li>
+                <li class="item"><a href="/" class="link">Contacts</a></li>
                 </ul>
             </nav>
+            <button class="menu-btn js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="burger-icon" width="32" height="22">
+                    <use href="./img/close-cross.svg"></use>
+                </svg>
+            </button>
             <ul class="auth-nav list">
                 <li class="contact-link"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
                 <li class="contact-link"><a href="tel:+11(000)111-11-11" class="link">+11 (000) 111-11-11</a></li>
@@ -92,7 +97,7 @@
         </section>
         <!-- Работа       -->
 
-        <section class="section ">
+        <section class="section products">
             <div class="conteiner">
                 <h2 class="section-title">What are we doing</h2>
 
@@ -110,10 +115,10 @@
          <div class="conteiner">
           <h2 class="section-title">Our Team</h2>
            <ul class="list-team list">
-            <li class="item-team"><img src="./img/img4.jpg" alt="foto-Designer">
+            <li class="item-team"><img srcset="./img/webstudio/team/mark-guerrero.jpg 1x, ./img/webstudio/team/mark-guerrero.jpg 2x" src="./img/img4.jpg" alt="foto-Designer"  width="264" height="260">
              <div class="team-coment">
-              <h3 class="section-name">Guerrero Product</h3>
-                <p class="section-text">Designer</p>
+              <h3 class="section-name">Mark Guerrero </h3>
+                <p class="section-text">Product Designer</p>
                  <ul class="list team-soc">
                   <li class="team-soc-item">
                     <a href="https://www.instagram.com/" class="soc-link"><svg class="icon-team">
@@ -252,11 +257,11 @@
 
         <div class="footer-subskribe">
           <p class="text-subscribe">Subscribe</p>
-          <form action="">
+          <form class="subscribe-form" action="">
        
           <input class="input-email" type="email" name="subscribe" placeholder="E-mail">
           <button class="button-subscribe" type="submit">Subscribe
-            <svg class="subscribe-icon">
+            <svg class="subscribe-icon" width="24" height="24">
             <use href="./img/modal.svg#icon-iconsend"></use>
             </svg>
             </button>
@@ -322,6 +327,7 @@
 
                 </div>
             </div>
+<script src="./js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 
 </body>
