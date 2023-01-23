@@ -731,6 +731,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     }
         .name {
             text-align: start;
+            margin-top: 0px;
         }
 }
 @media screen and (min-width: 1200px) {
