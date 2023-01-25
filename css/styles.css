@@ -156,7 +156,7 @@ p {
     position: relative;
     display: block;
     padding-top: 24px;
-    padding-bottom: 28px;
+    padding-bottom: 22px;
     font-weight: 500;
     color: var(--heading-text-color);
     text-decoration: none;
@@ -258,7 +258,7 @@ p {
 (min-resolution: 2dppx) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../img/webstudio/01_mobile/hero-bg-mobile@2x.jpg);
+            url(../img/people-office@2x.png);
     }
 }
 /* point 768 */
@@ -472,6 +472,7 @@ screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     text-align: center;
         padding: 32px 16px;
         border-radius: 0px 0px 4px 4px;
+        background-color: var(--primari-bg-color);
 }
 .team-soc{
     display: flex;
@@ -1181,10 +1182,17 @@ display: inline-flex;
 
 .akcent {
     font-weight: 700;
-    font-size: 8vw;
+    font-size: 36px;
     line-height: 40px;
     color: #4d5ae5;
 }
+@media screen and (min-width: 320px){
+.akcent {
+    font-size: 24px;
+}
+}
+    
+
 .mobile-contacts-item:not(:last-child) {
     margin-bottom: 40px;
 }
