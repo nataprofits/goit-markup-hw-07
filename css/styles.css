@@ -196,7 +196,7 @@ p {
     }
 }
 .auth-nav > .contact-link:not(:last-child) {
-     margin-bottom: 1px; 
+     margin-bottom: 2px; 
 }
 @media screen and (min-width: 1200px) {
 .auth-nav .contact-link+.contact-link {
